@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "foo"
+version = "0.1.0"
+description = "A library that `bar` depends on"
+authors = ["Ryan Scott"]
+license = "BSD License"
+include = [
+    "LICENSE",
+    "mypy.ini",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry>=1.1.4", "setuptools>=40.8.0"]
